@@ -1,0 +1,12 @@
+<div class="card mb-2">
+	
+	<div class="card-body">
+		<img class="img-thumbnail" src="{{#if this.image}}{{this.image}}{{else}}../../../assets/images/ringerLogo.png{{/if}}" alt="Card image cap">
+		<h5 class="card-title">{{this.title}}</h5>
+		<p class="card-text">{{this.summary}}</p>
+		<a href={{this.link}} target="#">
+			<button class="btn btn-warning" data-rank="{{this._id}}">Link</button>
+		</a>
+	</div>
+</div>
+
