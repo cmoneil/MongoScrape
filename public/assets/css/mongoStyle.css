@@ -30,3 +30,7 @@ h3 {
 .modalButton {
     margin-left: 15px;
 }
+
+#deleteBtn {
+    margin-left: 7px;
+}

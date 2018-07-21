@@ -30,16 +30,8 @@ $(document).on("click", "#saveBtn", function() {
 
       $(".modal-title").html(`<h2>${data.title}</h2>`)
       $(".modal-body").html(`<div class="col-12"><label for="titleInput">Title:</label><input id="titleInput" name="title"><label for="bodyInput">Comment:</label>
-      <textarea id="bodyInput" name="body"></textarea></div><button class="btn btn-primary modalButton" data-id=${thisId} id="saveComment">Save Comment</button>`)
-      // $(".modalButton").html(`<button class="btn btn-primary modalButton" data-id=${thisId} id="saveComment">Save Comment</button>`)
-      // The title of the article
+      <textarea id="bodyInput" name="body"></textarea></div><button class="btn btn-primary modalButton" data-id=${thisId} id="saveComment">Save Comment</button><button id="deleteBtn" class="btn btn-danger">Delete</button>`)
       
-      // An input to enter a new title
-      // $("#comments").append("<input id='titleinput' name='title' >");
-      // // A textarea to add a new note body
-      // $("#comments").append("<textarea id='bodyinput' name='body'></textarea>");
-      // // A button to submit a new note, with the id of the article saved to it
-      // $("#comments").append("<button data-id='" + data._id + "' id='savenote'>Save Note</button>");
 
       // If there's a comment in the article
       if (data.comments) {
