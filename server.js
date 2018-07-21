@@ -12,7 +12,7 @@ var cheerio = require("cheerio");
 // Require all models
 var db = require("./models");
 
-var PORT = 3000;
+var PORT = process.env.PORTY || 3000;
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoScrape";
 
 mongoose.Promise = Promise;
