@@ -1,3 +1,15 @@
+body {
+    background-image: url(../images/maxresdefault.jpg)
+}
+
+.jumbotron {
+    background-color: rgb(132,140,146, 0.7)
+}
+
+h3 {
+    color: #ffffff;
+}
+
 .img-thumbnail {
     width: 20%;
     height: 20%;
