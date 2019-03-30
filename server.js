@@ -88,7 +88,7 @@ app.get("/scrape", function (req, res) {
       }
         
 
-        
+        console.log(result)
         //resultArray.push(result);
         //console.log(resultArray)
 
@@ -103,7 +103,8 @@ app.get("/scrape", function (req, res) {
           title: result.title,
           link: result.link,
           summary: result.summary,
-          image: result.image
+          image: result.image,
+          dateAdded: Date.now()
         },
         { upsert: true }
       )
@@ -135,7 +136,7 @@ app.get("/scrape", function (req, res) {
 // Route for getting all Articles from the db
 
 app.get("/", function (req, res) {
-  db.Article.find({})
+  db.Article.find({}).sort({dateAdded: 1})
     .then(function (dbArticle) {
       
       res.render("index", { articles: dbArticle })
